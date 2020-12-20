@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
+import ContactListHeader from './Components/ContactListHeader/ContactListHeader';
+import ContactsList from './Components/ContactListTable/ContactListtable';
+import Contactdescription from './Components/ContactsDescription/Contactdescription';
+import SideBarComponent from './Components/SideBarComponent/SideBarComponent';
+import HeaderComponent from "./Components/HeaderComponent/HeaderComponent";
+
+export const contactContext = createContext( [ {}, () => {}] );
 
 function App() {
+  const [contactState, setContactState] = useState({
+    users : [],
+    selectedUser:null,
+    searchText : ''
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderComponent />
+      <SideBarComponent />
+      <contactContext.Provider value = {[contactState,setContactState]}>
+        <div className='contact-list-app'>
+          <ContactListHeader />
+          <div className='contact-details'>
+            <ContactsList />
+            <Contactdescription />
+          </div>
+        </div>
+      </contactContext.Provider>
     </div>
   );
 }

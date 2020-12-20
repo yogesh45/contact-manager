@@ -1,0 +1,98 @@
+#contacts-list-comp{
+    width: 35%;
+    display: inline-block;
+    .contacts-list-table{
+        max-height: 550px;
+        overflow: scroll;
+        overflow-x: hidden;
+        .no-contact-list{
+            height: 550px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    #contacts{ 
+        width: 100%;
+        .select-checkbox{
+            width: 20px;
+            height: 20px;
+        }
+        tbody tr:hover{
+            td{  
+                background: #cccccc30;
+            }
+        }
+        th,td{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color:#cccccc30;
+            color: #00000038;
+            padding-left : 10px;
+        }
+        td{
+            color: #000000;
+            background-color: #ffffff;
+        }
+        #basic_info{
+            width : 30%;
+            .avathar-component{
+                margin : 0;
+                .avathar-name{
+                    line-height: 32px !important;
+                    color: #ffffff;
+                }
+            }
+        }
+        td#basic_info{
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+        #add{
+            width : 10%;
+            color : #000000
+        }
+        #company{
+            width : 20%;
+            font-weight: 500;
+        }
+        .avathar{
+            width : 50px;
+            height: 50px;
+            border-radius: 25px;
+            
+        }
+        .details{
+            margin-left: 10px;
+            .name{
+                font-size: 20px;
+            }
+            span{
+                color:#a89d9d;
+            }
+            .edit-contact,
+            .delete-contact{
+                width : 16px;
+                cursor: pointer;
+            }
+            .delete-contact{
+                margin-left: 10px;
+            }
+        }
+        .selected td{
+            background: #7f859030;
+        }
+    }
+}
+
+@media screen and (min-width : 1024px) and (max-width : 1440px){
+    .contacts-list{
+        width: 50% !important;
+    }
+}
+
+@import './mobile.scss';
+@import './tablet.scss';

@@ -1,0 +1,47 @@
+@media screen and (min-width : 0px) and (max-width : 767px){
+    #contacts-list-comp{
+        width: 100%;
+        display: block;
+        .contacts-list-table{
+            max-height: 200px;
+            overflow: scroll;
+            overflow-x: hidden;
+            .no-contact-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-align: center;
+            }
+            table{
+                text-align: left;
+                position: relative;
+                border-collapse: collapse; 
+                thead{
+                    position: sticky;
+                    top: 0; 
+                }
+            }
+        }
+        #contacts{
+            #basic_info{
+                width: 25%;
+                .avathar-component{
+                    width : 30px !important;
+                    height : 30px !important;
+                    .avathar-name{
+                        line-height: 22px !important;
+                    }
+                }
+            }
+            .details{
+                .name{
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

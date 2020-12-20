@@ -1,0 +1,57 @@
+.contact-description{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    min-height: 550px;
+    height : auto;
+    background: #f1f1f1;
+    width: 450px;
+    .avathar-content{
+        margin-top: 40px;
+        .avathar-name{
+            font-size: 24px;
+        }
+    }
+    .contact-name{
+        font-size: 24px;
+        margin-top : 30px;
+        text-align: center;
+    }
+    .contact-body{
+        margin:0px 30px;
+    }
+    .borderd{
+        padding: 20px 0px;
+        border-bottom: 1px solid #e3e1e1;
+    }
+    .borderd:last-child{
+        border:none
+    }
+    .contact-body{
+        .title{
+            width : 40%;
+            display: inline-block;
+            color: #a9a5a5;
+        }
+        .value{
+            width: 60%;
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+    }
+    .no-user-selected{
+        font-size: 20px;
+        width: 65%;
+        height: 100%;
+        margin: auto;
+        min-height: inherit;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@import './mobile.scss';
+@import './tablet.scss';

@@ -1,0 +1,30 @@
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .contact-description{
+        width : 45% !important;
+        margin-left: 20px;
+        min-height: 415px;
+        height: auto;
+        .contact-body{
+            margin:0px 15px
+        }
+        .avathar-content{
+            margin-top:20px;
+            .avathar-component{
+                height: 40px !important;
+                width: 40px !important;
+                border-radius: 20px !important;
+                .avathar-name{
+                    line-height: 42px !important;
+                    font-size: 22px;
+                }
+            }
+        }
+        .contact-name{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .borderd{
+            padding : 10px 0px;
+        }
+    }
+}

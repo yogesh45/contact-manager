@@ -1,0 +1,36 @@
+@media screen and (min-width : 0px) and (max-width:768px){
+    .contact-list-header-container{
+        .header-title-sec{
+            width: 90%;
+            margin-top:20px;
+            margin:auto;
+            .header-title{
+                .title{
+                    font-size: 18px;
+                }
+                span{
+                    font-size : 12px;
+                }
+            }
+            .sort-by-sec{
+                margin-left: auto;
+            }
+        }
+        .header-add-search{
+            width: 100%;
+            display: block;
+            padding-top: 30px;
+            .header-search{
+                text-align: center;
+                input{
+                    width : 250px;
+                }
+            }
+            .add-contact{
+                text-align: center;
+                margin-top: 10px;
+                margin-left:0px ;
+            }
+        }
+    }
+}

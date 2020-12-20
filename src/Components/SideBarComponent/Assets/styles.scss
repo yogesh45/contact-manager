@@ -1,0 +1,25 @@
+.sidebar{
+    display: inline-block;
+    background-image: linear-gradient(#f08642, #E684AE);
+    position: absolute;
+    top: 0px;
+    .sidebar-options{
+        margin-top: 50px;
+        text-align: center;
+        .sidebar-image {
+            img{
+                width: 20px;
+                padding: 10px 0px;
+            }
+        }
+    }
+    .side-menu{
+        text-align: center;
+        margin-top: 20px;
+        img{
+            width: 30px
+        }
+    }
+}
+
+@import './mobile.scss';

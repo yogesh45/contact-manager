@@ -1,0 +1,76 @@
+.contact-list-header-container{
+    .header-title-sec{
+        display: flex;
+        align-items: center;
+        .contact-list-image{
+            width : 30px;
+            height : 30px;
+        }
+        .header-title{
+            margin-left: 10px;
+            .title{
+                margin:0px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            
+        }
+        .sort-by-sec{
+            margin-left : 40px;
+            font-size: 14px;
+            font-weight: normal;
+            
+        }
+        .sort-by-sec::after{
+            content: '';
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid #a8a6a6;
+            padding-top: 2px;
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        span{
+            font-size: 14px;
+            color: #cccccc;
+            font-weight: 500;
+        }
+    }
+    .header-add-search{
+        width: max-content;
+        display: flex;
+        padding-left: 40px;
+        padding-top: 40px;
+        .header-search{
+            .search-input{
+                padding:13px 20px;
+                border: none;
+                background-color:#cccccc45;
+                border-radius: 20px;
+                width: 220px;
+                outline: none;
+            }
+            .search-input::placeholder{
+                font-size: 12px;
+                color:rgba(0, 0, 0, 0.438);
+            }
+        }
+        .add-contact{
+            margin-left: 20px;
+            .add-btn{
+                padding : 12px;
+                width : 150px;
+                color : #ffffff;
+                border : none;
+                border-radius: 5px;
+                background-image: linear-gradient(to right, #f08642 , #E684AE);
+                box-shadow: 0px 0px 7px 0px #00000047;
+                cursor: pointer;
+                outline: none;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
+
+@import './mobile.scss';

@@ -1,0 +1,42 @@
+@media screen and (min-width : 768px) and (max-width : 1220px){
+    .contact-details{
+        #contacts-list-comp{
+            width: 50%;
+            display: inline-block;
+            .contacts-list-table{
+                height: 400px;
+                .no-contact-list{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                #contacts{
+                    tbody{
+                        #basic_info{
+                            .avathar-component{
+                                width :30px !important;
+                                height: 30px !important;
+                                border-radius: 15px !important;
+                                .avathar-name{
+                                    line-height: 22px !important;
+                                }
+                            }
+                            .details{
+                                .name{
+                                    font-size: 16px; 
+                                }
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+} 
